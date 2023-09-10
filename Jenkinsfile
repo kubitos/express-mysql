@@ -18,7 +18,7 @@ pipeline {
       // General Variables for Pipeline
       PROJECT_ROOT = 'express-mysql/app'
       EMAIL_ADDRESS = 'a.alexander718@hotmail.com'
-      REGISTRY = 'san99tiago/docker-pirate-express'
+      REGISTRY = 'dani718/docker-pirate-express'
   }
 
   stages {
@@ -68,7 +68,7 @@ pipeline {
                           -Dsonar.host.url=http://mysonarqube:9000 \
                           -Dsonar.sources=./${PROJECT_ROOT}/app.js,./${PROJECT_ROOT}/config/db.config.js,./${PROJECT_ROOT}/routes/developers.js \
                           -Dsonar.login=admin \
-                          -Dsonar.password=admin \
+                          -Dsonar.password=ATX-750W \
                           -Dsonar.tests=./${PROJECT_ROOT}/test \
                           -Dsonar.javascript.lcov.reportPaths=./${PROJECT_ROOT}/coverage/lcov.info"
             }
